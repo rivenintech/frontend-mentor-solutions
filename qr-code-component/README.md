@@ -1,17 +1,16 @@
-# Frontend Mentor - QR code component solution (TailwindCSS)
+# Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+This is my solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
 ## Table of contents
 
 - [Overview](#overview)
   - [Challenge](#challenge)
-  - [Solution](#solution)
-  - [Live Solution URL](#live-solution-url)
+  - [Solution](#solution-live-solution-url)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-- [Author](#author)
+- [Author/Links](#authorlinks)
 
 ## Overview
 
@@ -23,13 +22,11 @@ Your challenge is to build out this QR code component and get it looking as clos
 | --- | --- |
 | ![desktop design](./assets/desktop-design.jpg) | ![mobile design](./assets/mobile-design.jpg) |
 
-### Solution
+### Solution ([Live Solution URL](https://riven000.github.io/frontend-mentor-solutions/qr-code-component/))
 
 | Desktop Design (solution) | Mobile Design (solution) |
 | --- | --- |
 | ![desktop design](./assets/desktop-solution.jpg) | ![mobile design](./assets/mobile-solution.jpg) |
-
-#### [Live Solution URL](https://riven000.github.io/frontend-mentor-solutions/qr-code-component/)
 
 ## My process
 
@@ -49,8 +46,9 @@ I learned how to deconstruct a design into smaller parts and then join them toge
 </div>
 ```
 
-## Author
+## Author/Links
 
+- [Live Solution URL](https://riven000.github.io/frontend-mentor-solutions/qr-code-component/)
 - My Website - [rivenintech.com](https://rivenintech.com)
 - Twitter - [@rivenintech](https://www.twitter.com/rivenintech)
-- Frontend Mentor - [@RiveN000](https://www.frontendmentor.io/profile/RiveN000)
+- Frontend Mentor Profile - [@RiveN000](https://www.frontendmentor.io/profile/RiveN000)
