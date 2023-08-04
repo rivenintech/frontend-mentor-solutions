@@ -22,7 +22,7 @@ Your challenge is to build out this QR code component and get it looking as clos
 | --- | --- |
 | ![desktop design](./assets/desktop-design.jpg) | ![mobile design](./assets/mobile-design.jpg) |
 
-### Solution ([Live Solution URL](https://riven000.github.io/frontend-mentor-solutions/qr-code-component/))
+### Solution ([Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/))
 
 | Desktop Design (solution) | Mobile Design (solution) |
 | --- | --- |
@@ -48,7 +48,7 @@ I learned how to deconstruct a design into smaller parts and then join them toge
 
 ## Author/Links
 
-- [Live Solution URL](https://riven000.github.io/frontend-mentor-solutions/qr-code-component/)
+- [Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/)
 - My Website - [rivenintech.com](https://rivenintech.com)
 - Twitter - [@rivenintech](https://www.twitter.com/rivenintech)
 - Frontend Mentor Profile - [@RiveN000](https://www.frontendmentor.io/profile/RiveN000)
