@@ -16,8 +16,6 @@
 .prettierignore
 
 # Ignore tailwindcss related files + style-guide.md
-tailwind.config.js
-input.css
 package-lock.json
 package.json
 node_modules

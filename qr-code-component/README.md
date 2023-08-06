@@ -2,6 +2,8 @@
 
 This is my solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
+![Design preview for the QR code component](./assets/design/preview.jpg)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -20,13 +22,13 @@ Your challenge is to build out this QR code component and get it looking as clos
 
 | Desktop Design | Mobile Design |
 | --- | --- |
-| ![desktop design](./assets/desktop-design.jpg) | ![mobile design](./assets/mobile-design.jpg) |
+| ![desktop design](./assets/design/desktop-design.jpg) | ![mobile design](./assets/design/mobile-design.jpg) |
 
 ### Solution ([Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/))
 
 | Desktop Design (solution) | Mobile Design (solution) |
 | --- | --- |
-| ![desktop design](./assets/desktop-solution.jpg) | ![mobile design](./assets/mobile-solution.jpg) |
+| ![desktop design](./assets/design/desktop-solution.jpg) | ![mobile design](./assets/design/mobile-solution.jpg) |
 
 ## My process
 
