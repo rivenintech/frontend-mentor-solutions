@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body>
+    <!-- Container to center the component -->
+    <main class="flex flex-col justify-center items-center text-center font-medium md:h-screen">
+        <!-- Component -->
+        <section class="flex flex-col bg-white rounded-3xl md:shadow-2xl md:flex-row md:shadow-cobalt-blue/10">
+            <div
+                class="flex flex-col rounded-b-3xl bg-gradient-to-t from-light-royal-blue to-light-slate-blue md:rounded-3xl md:max-w-xs">
+                <h1 class="text-light-lavender text-lg font-semibold my-5">Your Result</h1>
+                <div
+                    class="flex flex-col justify-center items-center mx-auto aspect-square h-36 rounded-full bg-gradient-to-t to-violet-blue from-persian-blue md:h-full">
+                    <p class="font-bold text-6xl text-white" id="score">0</p>
+                    <p class="text-pale-blue font-semibold">of 100</p>
+                </div>
+                <p class="text-white text-2xl font-semibold mt-5 mb-2">Great</p>
+                <p class="text-light-lavender m-10 mt-0">You scored higher than 65% of the people who have taken
+                    these tests.</p>
+            </div>
+
+            <div class="mx-8">
+                <h2 class="text-dark-grayblue text-lg font-extrabold my-5 text-left">Summary</h2>
+                <div id="content" class="space-y-4">
+                </div>
+
+                <button type="button"
+                    class="bg-dark-grayblue text-white text-lg font-semibold w-full rounded-3xl p-3 my-5 hover:bg-gradient-to-t from-light-royal-blue to-light-slate-blue">Continue</button>
+            </div>
+        </section>
+
+
+        <!-- Attribution -->
+        <footer class="text-xs md:mt-5">
+            Challenge by <a href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+                target="_blank" class="text-blue-700 hover:text-blue-500 duration-300">Frontend Mentor</a>.
+            Coded by <a href="https://rivenintech.com" target="_blank"
+                class="text-blue-700 hover:text-blue-500 duration-300">RiveN</a>.
+        </footer>
+    </main>
+    <!-- Dynamic content loading (bonus task) -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

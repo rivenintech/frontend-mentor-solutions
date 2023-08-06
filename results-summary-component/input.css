@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'HankenGrotesk';
+        src: url('./assets/HankenGrotesk-VariableFont_wght.ttf');
+        font-weight: 500, 700, 800;
+    }
+}
+
+body {
+    font-family: "HankenGrotesk", sans-serif;
+}
