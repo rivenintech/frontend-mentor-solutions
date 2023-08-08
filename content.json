@@ -19,5 +19,15 @@
             "tailwindcss",
             "javascript"
         ]
+    },
+    {
+        "title": "NFT preview card component",
+        "url": "nft-preview-card-component",
+        "difficulty": 1,
+        "image": "./nft-preview-card-component/assets/design/desktop-solution.png",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]
