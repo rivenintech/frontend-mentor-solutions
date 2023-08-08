@@ -4,11 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>All challenges | Frontend Mentor</title>
 </head>
 
-<body>
-    <h1>Hello World</h1>
+<body class="container mx-auto px-3">
+    <main class="m-3">
+        <h1 class="flex flex-col text-6xl font-semibold mx-auto my-12 w-fit text-center">
+            All Challenges
+            <span class="h-2 bg-blue-500 rounded-full mt-2"></span>
+        </h1>
+
+        <section class="flex items-center gap-5 text-lg">
+            <p class="font-semibold">Sort by:</p>
+            <button type="button" onclick="loadChallenges(false, this)"
+                class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white active">Easier
+                first</button>
+            <button type="button" onclick="loadChallenges(true, this)"
+                class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white">Harder
+                first</button>
+        </section>
+
+        <section class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 mt-5" id="content"></section>
+    </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>

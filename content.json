@@ -1,0 +1,23 @@
+[
+    {
+        "title": "QR code component",
+        "url": "qr-code-component",
+        "difficulty": 1,
+        "image": "./qr-code-component/assets/design/desktop-solution.jpg",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
+    },
+    {
+        "title": "Results summary component",
+        "url": "results-summary-component",
+        "difficulty": 1,
+        "image": "./results-summary-component/assets/design/desktop-solution.png",
+        "tags": [
+            "html",
+            "tailwindcss",
+            "javascript"
+        ]
+    }
+]
