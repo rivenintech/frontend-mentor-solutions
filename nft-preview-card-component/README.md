@@ -1,3 +1,19 @@
+---
+title: NFT preview card component
+---
+
+<script>
+  // Add target="_top" to all absolute URLs
+  document.addEventListener("DOMContentLoaded", function () {
+      var links = document.links;
+      for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+          if (links[i].hostname != window.location.hostname) {
+              links[i].target = "_top";
+          }
+      }
+  });
+</script>
+
 # Frontend Mentor - NFT preview card component solution
 
 This is my solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
