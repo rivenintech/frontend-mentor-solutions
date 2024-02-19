@@ -1,12 +1,8 @@
----
-title: Results summary component
----
-
 # Frontend Mentor - Results summary component solution
 
 This is my solution to the [results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
 
-![Design preview for the results summary component](./assets/design/preview.jpg)
+![Design preview for the results summary component](/results-summary-component/assets/design/preview.jpg)
 
 ## Table of contents
 
@@ -28,13 +24,13 @@ Your challenge is to build out this results summary component and get it looking
 
 | Desktop Design | Mobile Design |
 | --- | --- |
-| ![desktop design](./assets/design/desktop-design.jpg) | ![mobile design](./assets/design/mobile-design.jpg) |
+| ![desktop design](/results-summary-component/assets/design/desktop-design.jpg) | ![mobile design](/results-summary-component/assets/design/mobile-design.jpg) |
 
 ### Solution ([Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/results-summary-component/))
 
 | Desktop Design (solution) | Mobile Design (solution) |
 | --- | --- |
-| ![desktop design](./assets/design/desktop-solution.png) | ![mobile design](./assets/design/mobile-solution.png) |
+| ![desktop design](/results-summary-component/assets/design/desktop-solution.png) | ![mobile design](/results-summary-component/assets/design/mobile-solution.png) |
 
 ## My process
 
