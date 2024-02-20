@@ -2,7 +2,7 @@
 
 This is my solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
-![Design preview for the NFT preview card component](/nft-preview-card-component/assets/design/preview.jpg)
+![Design preview for the NFT preview card component](./assets/design/preview.jpg)
 
 ## Table of contents
 
@@ -27,13 +27,13 @@ Your users should be able to:
 
 | Desktop Design | Mobile Design |
 | --- | --- |
-| ![desktop design](/nft-preview-card-component/assets/design/desktop-design.jpg) | ![mobile design](/nft-preview-card-component/assets/design/mobile-design.jpg) |
+| ![desktop design](./assets/design/desktop-design.jpg) | ![mobile design](./assets/design/mobile-design.jpg) |
 
 ### Solution ([Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/nft-preview-card-component/))
 
 | Desktop Design (solution) | Mobile Design (solution) |
 | --- | --- |
-| ![desktop design](/nft-preview-card-component/assets/design/desktop-solution.png) | ![mobile design](/nft-preview-card-component/assets/design/mobile-solution.png) |
+| ![desktop design](./assets/design/desktop-solution.png) | ![mobile design](./assets/design/mobile-solution.png) |
 
 ## My process
 
