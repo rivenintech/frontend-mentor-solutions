@@ -30,10 +30,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Move challenges README.md to a new directory + rename to parent_foldername.md
+      - name: Modify challenges' README.md for Jekyll
+      # Find challenges' README.md, replace relative paths with absolute paths, add script, and move to a new directory
         run: |
-          mkdir challenges_info
-          find . -maxdepth 2 -mindepth 2 -type f -name 'README.md' -exec sh -c 'foldername=$(basename "$(dirname "$1")"); mv "$1" "challenges_info/$foldername.md"' _ {} \;
+          mkdir info
+          find . -maxdepth 2 -mindepth 2 -type f -name 'README.md' -exec sh -c 'foldername=$(basename "$(dirname "$1")");
+            sed -i "s|\\./|{{site.baseurl}}/$foldername/|g" "$1";
+            echo "<script src=\"{{site.baseurl}}/assets/challenges_readme.js\"></script>" >> "$1";
+            mv "$1" "info/$foldername.md"' _ {} \;
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
