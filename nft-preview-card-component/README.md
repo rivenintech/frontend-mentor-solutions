@@ -59,5 +59,5 @@ I learned how to create overlay hover effect using TailwindCSS, thanks to this t
 
 - [Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/nft-preview-card-component/)
 - My Website - [rivenintech.com](https://rivenintech.com)
-- Twitter - [@rivenintech](https://www.twitter.com/rivenintech)
+- GitHub - [@rivenintech](https://github.com/rivenintech)
 - Frontend Mentor Profile - [@rivenintech](https://www.frontendmentor.io/profile/rivenintech)

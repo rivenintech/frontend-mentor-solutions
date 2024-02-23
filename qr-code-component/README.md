@@ -52,5 +52,5 @@ I learned how to deconstruct a design into smaller parts and then join them toge
 
 - [Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/)
 - My Website - [rivenintech.com](https://rivenintech.com)
-- Twitter - [@rivenintech](https://www.twitter.com/rivenintech)
-- Frontend Mentor Profile - [@RiveN000](https://www.frontendmentor.io/profile/RiveN000)
+- GitHub - [@rivenintech](https://github.com/rivenintech)
+- Frontend Mentor Profile - [@rivenintech](https://www.frontendmentor.io/profile/rivenintech)

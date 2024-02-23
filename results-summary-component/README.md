@@ -48,5 +48,5 @@ I learned how to create gradient background using TailwindCSS. I also found out 
 
 - [Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/results-summary-component/)
 - My Website - [rivenintech.com](https://rivenintech.com)
-- Twitter - [@rivenintech](https://www.twitter.com/rivenintech)
-- Frontend Mentor Profile - [@RiveN000](https://www.frontendmentor.io/profile/RiveN000)
+- GitHub - [@rivenintech](https://github.com/rivenintech)
+- Frontend Mentor Profile - [@rivenintech](https://www.frontendmentor.io/profile/rivenintech)
