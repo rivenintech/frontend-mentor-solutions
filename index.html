@@ -10,6 +10,16 @@
 </head>
 
 <body class="container mx-auto px-3">
+    <div class="fixed w-screen h-screen flex items-center justify-center backdrop-blur-sm transition-all duration-300 opacity-0 invisible top-0 left-0 [&.open]:visible [&.open]:opacity-100"
+        id="infoModal">
+        <div class="absolute bg-[#0000009c] w-full h-full modal-exit"></div>
+        <div class="w-[90%] h-[90%] rounded-lg bg-white relative p-7">
+            <iframe src="" frameborder="0" style="width: 100%; height: 100%;">
+            </iframe>
+            <button class="modal-exit absolute right-3 top-2 text-red-500 font-bold cursor-pointer">X</button>
+        </div>
+    </div>
+
     <main class="m-3">
         <h1 class="flex flex-col text-6xl font-semibold mx-auto my-12 w-fit text-center">
             All Challenges
@@ -18,10 +28,10 @@
 
         <section class="flex items-center gap-5 text-lg">
             <p class="font-semibold">Sort by:</p>
-            <button type="button" onclick="loadChallenges(false, this)"
+            <button type="button" id="sort-easy"
                 class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white active">Easier
                 first</button>
-            <button type="button" onclick="loadChallenges(true, this)"
+            <button type="button" id="sort-hard"
                 class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white">Harder
                 first</button>
         </section>

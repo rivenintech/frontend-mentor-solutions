@@ -5,5 +5,4 @@ module.exports = {
         extend: {},
     },
     plugins: [],
-    safelist: ["text-yellow-300", "text-gray-300"],
 };
