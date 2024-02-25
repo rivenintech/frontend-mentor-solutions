@@ -18,11 +18,11 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 
 ### Challenge
 
-Your challenge is to build out this QR code component and get it looking as close to the design as possible.
-
 | Desktop Design | Mobile Design |
 | --- | --- |
 | ![desktop design](./assets/design/desktop-design.jpg) | ![mobile design](./assets/design/mobile-design.jpg) |
+
+Your challenge is to build out this QR code component and get it looking as close to the design as possible.
 
 ### Solution ([Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/))
 
@@ -50,7 +50,7 @@ I learned how to deconstruct a design into smaller parts and then join them toge
 
 ## Author/Links
 
-- [Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/)
+- [Live Solution](https://rivenintech.github.io/frontend-mentor-solutions/qr-code-component/)
+- [Source Code](https://github.com/rivenintech/frontend-mentor-solutions/tree/main/qr-code-component/)
 - My Website - [rivenintech.com](https://rivenintech.com)
-- GitHub - [@rivenintech](https://github.com/rivenintech)
 - Frontend Mentor Profile - [@rivenintech](https://www.frontendmentor.io/profile/rivenintech)

@@ -18,16 +18,16 @@ This is my solution to the [NFT preview card component challenge on Frontend Men
 
 ### Challenge
 
+| Desktop Design | Mobile Design |
+| --- | --- |
+| ![desktop design](./assets/design/desktop-design.jpg) | ![mobile design](./assets/design/mobile-design.jpg) |
+
 Your challenge is to build out this preview card component and get it looking as close to the design as possible.
 
 Your users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
-
-| Desktop Design | Mobile Design |
-| --- | --- |
-| ![desktop design](./assets/design/desktop-design.jpg) | ![mobile design](./assets/design/mobile-design.jpg) |
 
 ### Solution ([Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/nft-preview-card-component/))
 
@@ -57,7 +57,7 @@ I learned how to create overlay hover effect using TailwindCSS, thanks to this t
 
 ## Author/Links
 
-- [Live Solution URL](https://rivenintech.github.io/frontend-mentor-solutions/nft-preview-card-component/)
+- [Live Solution](https://rivenintech.github.io/frontend-mentor-solutions/nft-preview-card-component/)
+- [Source Code](https://github.com/rivenintech/frontend-mentor-solutions/tree/main/nft-preview-card-component)
 - My Website - [rivenintech.com](https://rivenintech.com)
-- GitHub - [@rivenintech](https://github.com/rivenintech)
 - Frontend Mentor Profile - [@rivenintech](https://www.frontendmentor.io/profile/rivenintech)
