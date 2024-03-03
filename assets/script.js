@@ -23,7 +23,7 @@ const createChallengeCards = (challenges) => {
     contentContainer.innerHTML = "";
 
     for (const challenge of challenges) {
-        const { title, difficulty, tags, url, image } = challenge;
+        const { title, difficulty, tags, url, image, datetime } = challenge;
 
         const stars = Array.from({ length: 5 }, (_, i) => i + 1 <= difficulty)
             .map(
@@ -41,6 +41,7 @@ const createChallengeCards = (challenges) => {
             <div class="rounded shadow-lg shadow-blue-500/10 fade-in" style="opacity: 0;">
                 <img src="${image}" alt="challenge preview image" class="h-72 object-cover m-auto">
                 <div class="px-6 py-4">
+                    <p class="text-sm text-gray-500">${getTimeAgo(datetime)}</p>
                     <h2 class="font-bold text-xl">${title}</h2>
                     <div class="flex items-center py-1">
                         <p class="text-sm font-medium text-gray-500">Difficulty:&nbsp;</p>
@@ -114,6 +115,38 @@ const setupChallengeInfoModals = () => {
         }
     });
 };
+
+// Function to get the time ago from a date
+function getTimeAgo(date) {
+    const MINUTE = 60,
+        HOUR = 3600,
+        DAY = 86400,
+        WEEK = 6048e2;
+
+    const secondsAgo = Math.round((Date.now() - Date.parse(date)) / 1e3);
+
+    if (secondsAgo < MINUTE) {
+        return "Added just now";
+    }
+
+    let timeUnit, timeDivisor;
+
+    if (secondsAgo < HOUR) {
+        timeUnit = "minute";
+        timeDivisor = MINUTE;
+    } else if (secondsAgo < DAY) {
+        timeUnit = "hour";
+        timeDivisor = HOUR;
+    } else if (secondsAgo < WEEK) {
+        timeUnit = "day";
+        timeDivisor = DAY;
+    } else {
+        return new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+    }
+
+    const count = Math.floor(secondsAgo / timeDivisor);
+    return `Added ${count} ${timeUnit}${count !== 1 ? "s" : ""} ago`;
+}
 
 // Add event listener to the document to load the challenges and create the dynamic elements
 document.addEventListener("DOMContentLoaded", () => {
