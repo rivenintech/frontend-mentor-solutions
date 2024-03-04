@@ -1,21 +1,26 @@
-// Fetch the JSON file with the challenges data
+let challengesData = [];
+
 const fetchChallenges = async () => {
     try {
         const response = await fetch("challenges.json");
-        const challengesData = await response.json();
-        return challengesData;
+        return sortByCreatedDate(await response.json());
     } catch (error) {
         console.error("Error fetching JSON file:", error);
-        return [];
     }
 };
 
-// Function to sort the challenges by difficulty
-const sortByDifficulty = (challenges, descending = false) => {
-    return challenges.slice().sort((a, b) => (descending ? b.difficulty - a.difficulty : a.difficulty - b.difficulty));
+const sortByDifficulty = (challenges, ascending = true) => {
+    return challenges.slice().sort((a, b) => (ascending ? a.difficulty - b.difficulty : b.difficulty - a.difficulty));
 };
 
-// Function to create the challenge cards
+const sortByCreatedDate = (challenges, newestFirst = true) => {
+    return challenges.slice().sort((a, b) => {
+        const dateA = new Date(a.datetime);
+        const dateB = new Date(b.datetime);
+        return newestFirst ? dateB - dateA : dateA - dateB;
+    });
+};
+
 const createChallengeCards = (challenges) => {
     if (!challenges || challenges.length === 0) return;
 
@@ -62,7 +67,6 @@ const createChallengeCards = (challenges) => {
     }
 };
 
-// Function to apply a fade-in effect to the challenge cards
 const applyFadeInEffect = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -76,16 +80,18 @@ const applyFadeInEffect = () => {
     });
 };
 
-// Function to load and display the challenges
-const loadAndDisplayChallenges = async (descending = false, sortButton = null) => {
-    const challenges = await fetchChallenges();
-
+const loadAndDisplayChallenges = async (sortButton = null, sortByDiff = false, ascending = true) => {
     if (sortButton) {
         document.querySelector(".active").classList.remove("active");
         sortButton.classList.add("active");
     }
 
-    const sortedChallenges = sortByDifficulty(challenges, descending);
+    let sortedChallenges = challengesData;
+
+    if (sortByDiff) {
+        sortedChallenges = sortByDifficulty(challengesData, ascending);
+    }
+
     createChallengeCards(sortedChallenges);
 
     // Apply the fade-in effect after the cards are created
@@ -116,7 +122,6 @@ const setupChallengeInfoModals = () => {
     });
 };
 
-// Function to get the time ago from a date
 function getTimeAgo(date) {
     const MINUTE = 60,
         HOUR = 3600,
@@ -149,10 +154,13 @@ function getTimeAgo(date) {
 }
 
 // Add event listener to the document to load the challenges and create the dynamic elements
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+    challengesData = await fetchChallenges();
+
     // Add event listeners to the sort buttons
-    document.querySelector("#sort-easy").addEventListener("click", (event) => loadAndDisplayChallenges(false, event.currentTarget));
-    document.querySelector("#sort-hard").addEventListener("click", (event) => loadAndDisplayChallenges(true, event.currentTarget));
+    document.querySelector("#sort-easy").addEventListener("click", (event) => loadAndDisplayChallenges(event.currentTarget, true, true));
+    document.querySelector("#sort-hard").addEventListener("click", (event) => loadAndDisplayChallenges(event.currentTarget, true, false));
+    document.querySelector("#sort-newest").addEventListener("click", (event) => loadAndDisplayChallenges(event.currentTarget));
 
     loadAndDisplayChallenges();
     setupChallengeInfoModals();
