@@ -26,23 +26,25 @@
             <span class="h-2 bg-blue-500 rounded-full mt-2"></span>
         </h1>
 
-        <section class="flex items-center gap-5 text-lg">
+        <section class="flex flex-col md:flex-row items-center gap-3 text-lg">
             <p class="font-semibold">Sort by:</p>
-            <button type="button" id="sort-newest"
-                class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white active">Newest
-                First</button>
-            <button type="button" id="sort-easy"
-                class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white">Easier
-                First</button>
-            <button type="button" id="sort-hard"
-                class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white">Harder
-                First</button>
+            <div class="flex gap-5">
+                <button type="button" id="sort-newest"
+                    class="hidden md:block rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white active">Newest
+                    First</button>
+                <button type="button" id="sort-easy"
+                    class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white">Easier
+                    First</button>
+                <button type="button" id="sort-hard"
+                    class="rounded-lg border-2 border-blue-500 py-3 px-6 hover:bg-blue-500 hover:text-white duration-300 [&.active]:bg-blue-500 [&.active]:text-white">Harder
+                    First</button>
+            </div>
         </section>
 
         <section class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 mt-5" id="content"></section>
     </main>
     <!-- Attribution -->
-    <footer class="text-xs mt-5 text-center">
+    <footer class="text-xs my-5 text-center">
         Check out my <a href="https://www.frontendmentor.io/profile/rivenintech" target="_blank"
             class="text-blue-700 hover:text-blue-500 duration-300">Frontend Mentor profile</a> and <a
             href="https://github.com/rivenintech/frontend-mentor-solutions" target="_blank"
