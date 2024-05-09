@@ -38,6 +38,17 @@ jobs:
             sed -i "s|\\./|{{site.baseurl}}/$foldername/|g" "$1";
             echo "<script src=\"{{site.baseurl}}/assets/challenges_readme.js\"></script>" >> "$1";
             mv "$1" "info/$foldername.md"' _ {} \;
+      - name: Add meta tags to challenges' index.html
+        run: |
+          find . -mindepth 2 -type f -name 'index.html' -exec sh -c 'foldername=$(basename "$(dirname "$1")");
+            sed -i "s|</head>|<meta property=\"og:type\" content=\"website\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"og:url\" content=\"https://rivenintech.github.io/frontend-mentor-solutions/$foldername/\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"og:description\" content=\"\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"og:image\" content=\"https://rivenintech.github.io/frontend-mentor-solutions/$foldername/assets/design/desktop-solution.png\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"twitter:card\" content=\"summary_large_image\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"twitter:url\" content=\"https://rivenintech.github.io/frontend-mentor-solutions/$foldername/\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"twitter:description\" content=\"\" /></head>|g" "$1";
+            sed -i "s|</head>|<meta property=\"twitter:image\" content=\"https://rivenintech.github.io/frontend-mentor-solutions/$foldername/assets/design/desktop-solution.png\" /></head>|g" "$1"' _ {} \;
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
