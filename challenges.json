@@ -32,5 +32,16 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Blog preview card",
+        "url": "blog-preview-card",
+        "difficulty": 1,
+        "image": "./blog-preview-card/assets/design/desktop-solution.png",
+        "datetime": "2024-09-05T21:25:50.431Z",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]

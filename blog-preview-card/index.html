@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+	<title>Frontend Mentor | Blog preview card</title>
+</head>
+
+<body class="min-h-screen text-black flex flex-col items-center justify-center bg-yellow">
+	<main style="box-shadow: 8px 8px 0px 0px black;"
+		class="max-w-[384px] gap-6 flex flex-col border-black border-[1.5px] rounded-[20px] p-6 bg-white m-6">
+		<img src="assets/images/illustration-article.svg" alt="article illustration preview"
+			class="rounded-[10px]">
+
+		<!-- Content -->
+		<div class="space-y-3">
+			<p class="font-extrabold bg-yellow w-fit px-3 py-1 rounded">Learning</p>
+
+			<p class="text-sm">Published 21 Dec 2023</p>
+
+			<h2 class="font-extrabold text-2xl hover:text-yellow duration-200">HTML & CSS foundations</h2>
+
+			<p class="text-grey">These languages are the backbone of every website, defining structure, content,
+				and
+				presentation.</p>
+		</div>
+
+		<!-- Author -->
+		<div class="flex items-center gap-3 font-extrabold">
+			<img src="assets/images/image-avatar.webp" alt="author avatar" width="32" height="32">
+			<p class="text-sm">Greg Hooper</p>
+		</div>
+	</main>
+
+	<!-- Attribution -->
+	<footer class="text-xs">
+		Challenge by <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS"
+			target="_blank" class="text-blue-800 hover:text-blue-600 duration-300">Frontend Mentor</a>.
+		Coded by <a href="https://rivenintech.com" target="_blank"
+			class="text-blue-800 hover:text-blue-600 duration-300">RiveN</a>.
+	</footer>
+</body>
+
+</html>
