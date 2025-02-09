@@ -47,5 +47,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Recipe page",
+        "url": "recipe-page",
+        "difficulty": 1,
+        "image": "./recipe-page/assets/design/desktop-solution.png",
+        "datetime": "2025-02-09T19:31:50.431Z",
+        "category": "Page",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]
