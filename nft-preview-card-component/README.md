@@ -11,7 +11,6 @@ This is my solution to the [NFT preview card component challenge on Frontend Men
   - [Solution](#solution-live-solution-url)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author/Links](#authorlinks)
 
 ## Overview
@@ -41,19 +40,6 @@ Your users should be able to:
 
 - HTML
 - [TailwindCSS](https://tailwindcss.com/)
-
-### What I learned
-
-I learned how to create overlay hover effect using TailwindCSS, thanks to this tutorial: [https://www.kindacode.com/snippet/tailwind-css-create-image-hover-overlay-effects/](https://www.kindacode.com/snippet/tailwind-css-create-image-hover-overlay-effects/)
-
-```html
-<div class="group relative">
-  <img>
-  <div class="absolute top-0 w-full h-full bg-cyan bg-opacity-0 group-hover:bg-opacity-50 duration-300">
-    ...
-  </div>
-</div>
-```
 
 ## Author/Links
 

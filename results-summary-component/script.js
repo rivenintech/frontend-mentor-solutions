@@ -1,3 +1,10 @@
+const colors = [
+    { bg: "bg-light-red/5", text: "text-light-red" },
+    { bg: "bg-orangey-yellow/5", text: "text-orangey-yellow" },
+    { bg: "bg-green-teal/5", text: "text-green-teal" },
+    { bg: "bg-cobalt-blue/5", text: "text-cobalt-blue" },
+];
+
 // Get the data from data.json
 fetch("./data.json")
     .then((response) => {
@@ -8,7 +15,7 @@ fetch("./data.json")
         // Loop through data.json and create the elements dynamically
         for (let i = 0; i < data.length; i++) {
             const div = document.createElement("div");
-            div.classList.add("flex", "justify-between", `bg-${data[i].style}`, "bg-opacity-5", "rounded-lg", "p-4", "gap-16");
+            div.classList.add("flex", "justify-between", colors[i].bg, "rounded-lg", "p-4", "gap-16");
 
             const innerDiv = document.createElement("div");
             innerDiv.classList.add("flex", "gap-3");
@@ -18,7 +25,7 @@ fetch("./data.json")
             img.alt = "icon";
 
             const p = document.createElement("p");
-            p.classList.add(`text-${data[i].style}`, "font-semibold");
+            p.classList.add(colors[i].text, "font-semibold");
             p.textContent = data[i].category;
 
             innerDiv.appendChild(img);
