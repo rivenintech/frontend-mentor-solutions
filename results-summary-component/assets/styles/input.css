@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 500 800;
     font-display: swap;
-    src: url('/assets/HankenGrotesk-VariableFont_wght.ttf') format("truetype");
+    src: url('../HankenGrotesk-VariableFont_wght.ttf') format("truetype");
 }
 
 @theme {
