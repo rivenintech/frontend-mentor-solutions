@@ -59,5 +59,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Social links profile",
+        "url": "social-links-profile",
+        "difficulty": 1,
+        "image": "./social-links-profile/assets/design/desktop-solution.png",
+        "datetime": "2025-02-13T18:45:50.431Z",
+        "category": "Component",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]
