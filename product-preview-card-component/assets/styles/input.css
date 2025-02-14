@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500 700;
+    font-display: swap;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+}
+
+@theme {
+    --font-default: "Montserrat";
+    --font-heading: "Fraunces";
+    --color-green-500: hsl(158, 36%, 37%);
+    --color-green-700: hsl(158, 42%, 18%);
+    --color-black: hsl(212, 21%, 14%);
+    --color-grey: hsl(228, 12%, 48%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-White: hsl(0, 0%, 100%);
+}

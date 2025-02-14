@@ -71,5 +71,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Product preview card component",
+        "url": "product-preview-card-component",
+        "difficulty": 1,
+        "image": "./product-preview-card-component/assets/design/desktop-solution.png",
+        "datetime": "2025-02-14T16:15:30.431Z",
+        "category": "Component",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]
