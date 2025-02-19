@@ -83,5 +83,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Bento grid",
+        "url": "bento-grid",
+        "difficulty": 2,
+        "image": "./bento-grid/assets/design/desktop-solution.png",
+        "datetime": "2025-02-19T18:33:40.431Z",
+        "category": "Component",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]
