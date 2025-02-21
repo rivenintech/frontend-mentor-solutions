@@ -95,5 +95,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Order summary component",
+        "url": "order-summary-component",
+        "difficulty": 1,
+        "image": "./order-summary-component/assets/design/desktop-solution.png",
+        "datetime": "2025-02-21T23:20:40.431Z",
+        "category": "Component",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]

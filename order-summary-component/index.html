@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./assets/styles/output.css" />
+        <title>Frontend Mentor | Order summary card</title>
+    </head>
+    <body
+        class="bg-pale-blue font-default container mx-auto flex h-screen max-w-[480px] flex-col items-center justify-center bg-[url('../images/pattern-background-mobile.svg')] bg-no-repeat font-medium min-[1441px]:bg-cover md:bg-[url('../images/pattern-background-desktop.svg')]"
+    >
+        <main class="shadow-desaturated-blue/20 m-6 flex flex-col rounded-3xl bg-white text-center shadow-xl">
+            <img src="./assets/images/illustration-hero.svg" alt="order summary illustration" class="rounded-t-3xl" width="450" height="220" />
+            <div class="flex flex-col gap-6 p-7 md:p-10">
+                <h1 class="text-dark-blue -mb-1 text-2xl font-black md:text-3xl">Order Summary</h1>
+                <p class="text-desaturated-blue">
+                    You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+                </p>
+                <div class="bg-very-pale-blue flex items-center gap-5 rounded-xl p-4 md:p-6">
+                    <img src="./assets/images/icon-music.svg" alt="music icon" width="48" height="48" />
+                    <div class="text-left text-sm md:text-base">
+                        <p class="text-dark-blue font-black">Annual Plan</p>
+                        <p class="text-desaturated-blue">$59.99/year</p>
+                    </div>
+                    <p class="text-bright-blue hover:text-bright-blue/70 ml-auto cursor-pointer text-xs font-bold underline duration-300 md:text-sm">
+                        Change
+                    </p>
+                </div>
+                <button
+                    class="bg-bright-blue shadow-bright-blue/25 hover:bg-bright-blue/70 cursor-pointer rounded-xl py-3.5 text-sm font-black text-white shadow-xl duration-300"
+                >
+                    Proceed to Payment
+                </button>
+                <button class="text-desaturated-blue hover:text-dark-blue cursor-pointer text-sm font-black duration-300">Cancel Order</button>
+            </div>
+        </main>
+
+        <!-- Attribution -->
+        <footer class="my-5 hidden text-center text-xs md:block">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj"
+                target="_blank"
+                class="text-bright-blue hover:text-bright-blue/70 duration-300"
+                >Frontend Mentor</a
+            >. Coded by <a href="https://rivenintech.com" target="_blank" class="text-bright-blue hover:text-bright-blue/70 duration-300">RiveN</a>.
+        </footer>
+    </body>
+</html>
