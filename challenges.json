@@ -107,5 +107,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Clipboard landing page",
+        "url": "clipboard-landing-page",
+        "difficulty": 2,
+        "image": "./clipboard-landing-page/assets/design/desktop-solution.png",
+        "datetime": "2025-02-24T22:34:40.431Z",
+        "category": "Page",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]

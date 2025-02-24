@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: "Bai Jamjuree";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/BaiJamjuree-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bai Jamjuree";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/BaiJamjuree-SemiBold.ttf") format("truetype");
+}
+
+
+@theme {
+    --font-default: "Bai Jamjuree", sans-serif;
+    --color-strong-cyan: hsl(171, 66%, 44%);
+    --color-light-blue: hsl(233, 100%, 69%);
+    --color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --color-grayish-blue: hsl(201, 11%, 66%);
+}
