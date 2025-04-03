@@ -2,7 +2,7 @@
 
 This repository contains my solutions to the frontend challenges from [Frontend Mentor](https://www.frontendmentor.io).
 
-![Frontend Mentor Challenges Preview](./assets/challenges-preview.jpg)
+![Frontend Mentor Challenges Preview](./assets/challenges-preview.png)
 
 - You can view all my solutions in a gallery format (as seen above) here: [https://rivenintech.github.io/frontend-mentor-solutions/](https://rivenintech.github.io/frontend-mentor-solutions/).
 - Or you can view each solution individually by browsing the repository.
