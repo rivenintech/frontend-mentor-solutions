@@ -119,5 +119,17 @@
             "html",
             "tailwindcss"
         ]
+    },
+    {
+        "title": "Huddle landing page with a single introductory section",
+        "url": "huddle-landing-page-with-a-single-introductory-section",
+        "difficulty": 1,
+        "image": "./huddle-landing-page-with-a-single-introductory-section/assets/design/desktop-solution.png",
+        "datetime": "2025-04-08T12:45:30.431Z",
+        "category": "Page",
+        "tags": [
+            "html",
+            "tailwindcss"
+        ]
     }
 ]
