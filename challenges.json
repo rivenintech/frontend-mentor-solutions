@@ -6,10 +6,7 @@
         "image": "./qr-code-component/assets/design/desktop-solution.jpg",
         "datetime": "2023-08-06T18:14:05.621Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Results summary component",
@@ -18,11 +15,7 @@
         "image": "./results-summary-component/assets/design/desktop-solution.png",
         "datetime": "2023-08-06T20:28:36.275Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss",
-            "javascript"
-        ]
+        "tags": ["html", "tailwindcss", "javascript"]
     },
     {
         "title": "NFT preview card component",
@@ -31,10 +24,7 @@
         "image": "./nft-preview-card-component/assets/design/desktop-solution.png",
         "datetime": "2023-08-08T11:55:50.431Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Blog preview card",
@@ -43,10 +33,7 @@
         "image": "./blog-preview-card/assets/design/desktop-solution.png",
         "datetime": "2024-09-05T21:25:50.431Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Recipe page",
@@ -55,10 +42,7 @@
         "image": "./recipe-page/assets/design/desktop-solution.png",
         "datetime": "2025-02-09T19:31:50.431Z",
         "category": "Page",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Social links profile",
@@ -67,10 +51,7 @@
         "image": "./social-links-profile/assets/design/desktop-solution.png",
         "datetime": "2025-02-13T18:45:50.431Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Product preview card component",
@@ -79,10 +60,7 @@
         "image": "./product-preview-card-component/assets/design/desktop-solution.png",
         "datetime": "2025-02-14T16:15:30.431Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Bento grid",
@@ -91,10 +69,7 @@
         "image": "./bento-grid/assets/design/desktop-solution.png",
         "datetime": "2025-02-19T18:33:40.431Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Order summary component",
@@ -103,10 +78,7 @@
         "image": "./order-summary-component/assets/design/desktop-solution.png",
         "datetime": "2025-02-21T23:20:40.431Z",
         "category": "Component",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Clipboard landing page",
@@ -115,10 +87,7 @@
         "image": "./clipboard-landing-page/assets/design/desktop-solution.png",
         "datetime": "2025-02-24T22:34:40.431Z",
         "category": "Page",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     },
     {
         "title": "Huddle landing page with a single introductory section",
@@ -127,9 +96,6 @@
         "image": "./huddle-landing-page-with-a-single-introductory-section/assets/design/desktop-solution.png",
         "datetime": "2025-04-08T12:45:30.431Z",
         "category": "Page",
-        "tags": [
-            "html",
-            "tailwindcss"
-        ]
+        "tags": ["html", "tailwindcss"]
     }
 ]
