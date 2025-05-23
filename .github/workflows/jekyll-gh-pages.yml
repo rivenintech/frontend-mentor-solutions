@@ -51,6 +51,38 @@ jobs:
             sed -i "s|</head>|<meta property=\"twitter:title\" content=\"Frontend Mentor \| $foldername \" /></head>|g" "$1";
             sed -i "s|</head>|<meta property=\"twitter:description\" content=\"\" /></head>|g" "$1";
             sed -i "s|</head>|<meta property=\"twitter:image\" content=\"{{site.baseurl}}/frontend-mentor-solutions/$foldername/assets/design/desktop-solution.png\" /></head>|g" "$1"' _ {} \;
+      - name: Build Astro pages in subfolders
+        run: |
+          set -e
+
+          for dir in */ ; do
+            if [ -f "$dir/package.json" ] && [ -f "$dir/astro.config.mjs" ]; then
+              echo "Building Astro project in $dir"
+
+              cd "$dir"
+
+              npm install
+              npm run build
+
+              # Create a temp directory outside the current Astro folder
+              mkdir -p /tmp/astro-output
+              rm -rf /tmp/astro-output/*
+
+              # Copy contents of dist/ into the safe location
+              rsync -a dist/ /tmp/astro-output/
+
+              # Delete all files in the current Astro folder (to avoid Jekyll errors), except assets
+              find . -mindepth 1 -maxdepth 1 ! -name 'assets' -exec rm -rf {} +
+
+              # Now copy those back into the Astro root
+              rsync -a /tmp/astro-output/ ./
+
+              # Cleanup
+              rm -rf dist /tmp/astro-output
+
+              cd ..
+            fi
+          done
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
