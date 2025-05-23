@@ -1,0 +1,41 @@
+---
+import dessertsData from "../../public/data.json";
+import { ItemImgWithBtn } from "../components/buttons";
+import { Cart } from "../components/cart";
+import "../styles/global.css";
+import { formatCurrency } from "../utils/formatCurrency";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <title>Frontend Mentor | Product list with cart</title>
+    </head>
+    <body class="bg-rose-50">
+        <main class="container mx-auto my-20 flex flex-col gap-8 px-5 md:flex-row">
+            <section class="md:w-1/2 lg:w-2/3">
+                <h1 class="mb-8 text-4xl font-bold text-rose-900">Desserts</h1>
+                <section class="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+                    {
+                        dessertsData.map((dessert) => (
+                            <div class="mx-auto">
+                                <div class="relative mb-8">
+                                    <ItemImgWithBtn item={dessert} client:load />
+                                </div>
+                                <p class="text-sm text-rose-400">{dessert.category}</p>
+                                <h3 class="font-semibold text-rose-900">{dessert.name}</h3>
+                                <p class="text-red font-semibold">{formatCurrency(dessert.price)}</p>
+                            </div>
+                        ))
+                    }
+                </section>
+            </section>
+
+            <aside class="sticky top-4 h-fit rounded-lg bg-white px-6 py-8 md:w-1/2 lg:w-1/3">
+                <Cart client:load />
+            </aside>
+        </main>
+    </body>
+</html>

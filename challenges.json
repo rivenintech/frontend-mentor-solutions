@@ -97,5 +97,14 @@
         "datetime": "2025-04-08T12:45:30.431Z",
         "category": "Page",
         "tags": ["html", "tailwindcss"]
+    },
+    {
+        "title": "Product list with cart",
+        "url": "product-list-with-cart",
+        "difficulty": 2,
+        "image": "./product-list-with-cart/assets/design/desktop-design-order-confirmation-solution.png",
+        "datetime": "2025-05-23T20:10:30.431Z",
+        "category": "Page",
+        "tags": ["html", "tailwindcss", "react", "astro"]
     }
 ]

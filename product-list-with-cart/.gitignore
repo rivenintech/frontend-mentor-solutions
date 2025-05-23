@@ -15,8 +15,9 @@
 .DS_Store
 .prettierignore
 
-# Ignore NPM files and folders + style guide
 node_modules
 style-guide.md
 
-~templates/
+.astro
+/dist
+.prettierrc
