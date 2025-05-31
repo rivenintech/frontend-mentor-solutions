@@ -106,5 +106,14 @@
         "datetime": "2025-05-23T20:10:30.431Z",
         "category": "Page",
         "tags": ["html", "tailwindcss", "react", "astro"]
+    },
+    {
+        "title": "3-column preview card component",
+        "url": "3-column-preview-card-component",
+        "difficulty": 1,
+        "image": "./3-column-preview-card-component/assets/design/desktop-solution.png",
+        "datetime": "2025-05-31T16:59:10.431Z",
+        "category": "Component",
+        "tags": ["html", "sass"]
     }
 ]

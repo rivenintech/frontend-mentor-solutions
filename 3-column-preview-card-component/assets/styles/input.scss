@@ -1,0 +1,127 @@
+// Primary colors
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+// Neutral colors
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+// Fonts
+$font-heading: "Big Shoulders", sans-serif;
+$font-primary: "Lexend Deca", sans-serif;
+
+// Other variables
+$cards-border-radius: 10px;
+
+// Breakpoints
+@mixin at-breakpoint($breakpoint) {
+    @if $breakpoint == desktop {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+}
+
+// Shared styles
+%btn-base {
+    background-color: $very-light-gray;
+    padding: 12px 30px;
+    border-radius: 40px;
+    margin-top: 60px;
+    display: inline-block;
+    text-decoration: none;
+    border: $very-light-gray 2px solid;
+    transition: all 200ms;
+}
+
+%btn-base:hover {
+    background-color: transparent;
+    color: $very-light-gray;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $very-light-gray;
+    margin: 0;
+
+    @include at-breakpoint(desktop) {
+        // Place columns in the center of the page
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+main {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    margin: 80px 25px;
+
+    @include at-breakpoint(desktop) {
+        flex-direction: row;
+    }
+}
+
+.card {
+    padding: 48px;
+
+    h2 {
+        font-family: $font-heading;
+        text-transform: uppercase;
+        font-size: 42px;
+        color: $very-light-gray;
+    }
+
+    p {
+        line-height: 25px;
+        color: $transparent-white;
+    }
+
+    @include at-breakpoint(desktop) {
+        max-width: 210px;
+    }
+}
+
+.card:nth-child(1) {
+    background-color: $bright-orange;
+    border-top-left-radius: $cards-border-radius;
+    border-top-right-radius: $cards-border-radius;
+
+    a {
+        @extend %btn-base;
+        color: $bright-orange;
+    }
+
+    @include at-breakpoint(desktop) {
+        border-bottom-left-radius: $cards-border-radius;
+        border-top-right-radius: 0;
+    }
+}
+
+.card:nth-child(2) {
+    background-color: $dark-cyan;
+
+    a {
+        @extend %btn-base;
+        color: $dark-cyan;
+    }
+}
+
+.card:nth-child(3) {
+    background-color: $very-dark-cyan;
+    border-bottom-right-radius: $cards-border-radius;
+    border-bottom-left-radius: $cards-border-radius;
+
+    a {
+        @extend %btn-base;
+        color: $very-dark-cyan;
+    }
+
+    @include at-breakpoint(desktop) {
+        border-top-right-radius: $cards-border-radius;
+        border-bottom-left-radius: 0;
+    }
+}

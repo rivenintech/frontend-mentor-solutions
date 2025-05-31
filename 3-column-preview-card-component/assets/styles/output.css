@@ -1,0 +1,99 @@
+.card:nth-child(3) a, .card:nth-child(2) a, .card:nth-child(1) a {
+  background-color: hsl(0, 0%, 95%);
+  padding: 12px 30px;
+  border-radius: 40px;
+  margin-top: 60px;
+  display: inline-block;
+  text-decoration: none;
+  border: hsl(0, 0%, 95%) 2px solid;
+  transition: all 200ms;
+}
+
+.card:nth-child(3) a:hover, .card:nth-child(2) a:hover, .card:nth-child(1) a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  margin: 0;
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
+
+main {
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  margin: 80px 25px;
+}
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+.card {
+  padding: 48px;
+}
+.card h2 {
+  font-family: "Big Shoulders", sans-serif;
+  text-transform: uppercase;
+  font-size: 42px;
+  color: hsl(0, 0%, 95%);
+}
+.card p {
+  line-height: 25px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 210px;
+  }
+}
+
+.card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card:nth-child(1) a {
+  color: hsl(31, 77%, 52%);
+}
+@media (min-width: 768px) {
+  .card:nth-child(1) {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
+
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card:nth-child(2) a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card:nth-child(3) a {
+  color: hsl(179, 100%, 13%);
+}
+@media (min-width: 768px) {
+  .card:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
