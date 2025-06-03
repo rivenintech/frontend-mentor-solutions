@@ -115,5 +115,14 @@
         "datetime": "2025-05-31T16:59:10.431Z",
         "category": "Component",
         "tags": ["html", "sass"]
+    },
+    {
+        "title": "Testimonials grid section",
+        "url": "testimonials-grid-section",
+        "difficulty": 2,
+        "image": "./testimonials-grid-section/assets/design/desktop-solution.png",
+        "datetime": "2025-06-03T19:38:10.431Z",
+        "category": "Component",
+        "tags": ["html", "sass"]
     }
 ]

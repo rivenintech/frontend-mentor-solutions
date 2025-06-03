@@ -1,0 +1,135 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: hsl(0, 0%, 96%);
+  margin: 0;
+}
+
+main {
+  margin: 4rem 2rem;
+}
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+#reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+#reviews > div {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+  gap: 1.8rem;
+}
+#reviews > div article:nth-child(1) {
+  position: relative;
+  grid-column: span 2;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(260, 100%, 95%);
+}
+#reviews > div article:nth-child(1) h2 {
+  color: hsl(0, 0%, 100%);
+}
+#reviews > div article:nth-child(1) img {
+  border-color: hsl(264, 82%, 80%);
+}
+#reviews > div article:nth-child(1) svg {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-right: 4rem;
+  top: 0;
+}
+@media (min-width: 1024px) {
+  #reviews > div article:nth-child(1) svg {
+    display: block;
+  }
+}
+#reviews > div article:nth-child(1) * {
+  z-index: 1;
+  position: relative;
+}
+#reviews > div article:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 92%);
+}
+#reviews > div article:nth-child(2) h2 {
+  color: hsl(0, 0%, 100%);
+}
+#reviews > div article:nth-child(3) {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 10%, 45%);
+}
+#reviews > div article:nth-child(3) h2 {
+  color: hsl(217, 19%, 35%);
+}
+#reviews > div article:nth-child(4) {
+  grid-column: span 2;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+#reviews > div article:nth-child(4) h2 {
+  color: hsl(0, 0%, 81%);
+}
+#reviews > div article:nth-child(4) img {
+  border-color: hsl(263, 55%, 52%);
+}
+@media (min-width: 1024px) {
+  #reviews > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#reviews article:last-child {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 10%, 45%);
+}
+#reviews article:last-child h2 {
+  color: hsl(217, 19%, 35%);
+}
+#reviews article {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 30px 50px 40px 0px hsl(0, 0%, 81%);
+  z-index: -1;
+}
+#reviews article > p {
+  line-height: 1.2rem;
+}
+#reviews article p {
+  margin: 0;
+}
+#reviews article h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#reviews article > div {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+#reviews article > div img {
+  border-radius: 100%;
+  border: 2px solid transparent;
+}
+#reviews article > div p:last-of-type {
+  font-size: 11px;
+}
+@media (min-width: 1024px) {
+  #reviews {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
